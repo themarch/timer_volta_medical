@@ -11,7 +11,7 @@ class clock extends React.Component {
 }
 
   handleData(data) {
-    this.setState({data});
+    this.setState({data}); //Change state for attribute the value of data.
   }
 
   render() {
