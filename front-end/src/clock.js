@@ -11,7 +11,7 @@ class clock extends React.Component {
 }
 
   handleData(data) {
-    this.setState({count: data});
+    this.setState({data});
   }
 
   render() {
@@ -26,7 +26,7 @@ class clock extends React.Component {
               onMessage={this.handleData.bind(this)}/>
           <p style={styles.mission}> MY MISSION </p>
           <p style={styles.copiryght}> © Théophile Marchand-Arvier</p>
-          <p style={styles.timer}>{this.state.count}</p>
+          <p style={styles.timer}>{this.state.data}</p>
         </div>
       </div>
     );
